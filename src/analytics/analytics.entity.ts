@@ -16,3 +16,14 @@ export class UserAnalytics {
   @CreateDateColumn()
   registered_at: Date;
 }
+
+export class HotelAnalytics {
+  @PrimaryGeneratedColumn()
+  id: string;
+
+  @Column({ length: 6 })
+  hotel_tag: string;
+
+  @Column()
+  total_occupancy: number;
+}
