@@ -27,3 +27,14 @@ export class HotelAnalytics {
   @Column()
   total_occupancy: number;
 }
+
+export class FlightAnalytics {
+  @PrimaryGeneratedColumn()
+  id: string;
+
+  @Column({ length: 6 })
+  hotel_tag: string;
+
+  @Column()
+  total_occupancy: number;
+}
